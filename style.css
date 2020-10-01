@@ -1,0 +1,16 @@
+/* These are CSS variables */
+:root {
+    --main: #E2C8BB;
+    --secondary: #8B7D77;
+}
+
+/* This is an element tag */
+body {
+    background-color: var(--main);
+    margin: 0px;
+}
+
+/* This is a class */
+.container {
+    padding: 16px 10vw 16px 10vw;
+}
