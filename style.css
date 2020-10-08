@@ -51,6 +51,9 @@ body {
       border: 1px solid #ccc;  
     }
   }
+.title-holder{
+    text-align: center;
+}
 h1   {
     color: white; 
     background-color: var(--secondary); 
@@ -58,6 +61,8 @@ h1   {
     text-align: center;
     font-size: 96px;
     font-family: "gemunu";
+    display: inline-block;
+    padding: 8px 20px;
 }
 p   {
     color: white; 
