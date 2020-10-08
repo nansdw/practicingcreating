@@ -3,7 +3,10 @@
     --main: #E2C8BB;
     --secondary: #CDB3A7;
 }
-
+@font-face {
+    font-family: "gemunu";
+    src: url("./GemunuLibre-Regular.ttf");
+}
 /* This is an element tag */
 body {
     background-color: var(--main);
@@ -54,6 +57,7 @@ h1   {
     padding: 10px;
     text-align: center;
     font-size: 96px;
+    font-family: "gemunu";
 }
 p   {
     color: white; 
@@ -61,6 +65,7 @@ p   {
     padding: 10px;
     text-align: center;
     font-size: 36px;
+    font-family: "gemunu";
 }
 /* This is a class */
 .container {
