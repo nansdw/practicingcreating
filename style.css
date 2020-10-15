@@ -7,17 +7,22 @@
     font-family: "gemunu";
     src: url("./GemunuLibre-Regular.ttf");
 }
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+}
+
 /* This is an element tag */
 body {
     background-color: var(--main);
     margin: 0px;
 }
-.topnav {
-    overflow: hidden;
+nav {
+    display: flex;
     background-color: var(--secondary);
+    padding: 10px;
   }
-  .topnav a {
-    float: left;
+  nav a {
     display: block;
     color: white;
     text-align: center;
@@ -25,12 +30,12 @@ body {
     text-decoration: none;
     font-size: 17px;
   }
-  .topnav a:hover {
+  nav a:hover {
     background-color: var(--main);
     color: black;
   }
-  .topnav input[type=text] {
-    float: right;
+  nav input[type=search] {
+    margin-left: auto;
     padding: 6px;
     margin-top: 8px;
     margin-right: 16px;
@@ -38,8 +43,7 @@ body {
     font-size: 17px;
   }
   @media screen and (max-width: 600px) {
-    .topnav a, .topnav input[type=text] {
-      float: none;
+    nav a, nav input[type=search] {
       display: block;
       text-align: left;
       width: 100%;
@@ -47,7 +51,7 @@ body {
       padding: 14px;
     }
     
-    .topnav input[type=text] {
+    nav input[type=search] {
       border: 1px solid #ccc;  
     }
   }
@@ -55,22 +59,46 @@ body {
     text-align: center;
 }
 h1   {
-    color: white; 
-    background-color: var(--secondary); 
-    padding: 10px;
-    text-align: center;
-    font-size: 96px;
-    font-family: "gemunu";
     display: inline-block;
     padding: 8px 20px;
+    font-size: 96px;
+    font-family: "gemunu";
 }
 p   {
+    font-size: 36px;
+    font-family: "roboto";
+}
+h1,p    {
     color: white; 
     background-color: var(--secondary); 
     padding: 10px;
     text-align: center;
-    font-size: 36px;
-    font-family: "gemunu";
+  
+}
+#svgelem {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-40%);
+  -ms-transform: translateX(-40%);
+  transform: translateX(-40%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  color: white;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 36px;
+  font-family: "roboto";
+  margin: 4px 0;
+  cursor: pointer;
+  background-color: #8B7D77;
+  border-radius: 44px;
 }
 /* This is a class */
 .container {
