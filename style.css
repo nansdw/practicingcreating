@@ -82,24 +82,23 @@ h1,p    {
   -ms-transform: translateX(-40%);
   transform: translateX(-40%);
 }
-.center{
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
+
 .button {
   color: white;
-  padding: 15px 32px;
+  padding: 15px 60px;
   text-align: center;
   text-decoration: none;
   font-size: 36px;
   font-family: "roboto";
-  margin: 4px 2px;
+  margin: 4px 0;
   cursor: pointer;
   background-color: #8B7D77;
-  border-radius: 40%;
+  border-radius: 44px;
 }
 /* This is a class */
 .container {
