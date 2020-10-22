@@ -21,6 +21,7 @@ nav {
     display: flex;
     background-color: var(--secondary);
     padding: 10px;
+    font-family: "Roboto";
   }
   nav a {
     display: block;
@@ -59,8 +60,7 @@ nav {
     text-align: center;
 }
 h1   {
-    display: inline-block;
-    padding: 8px 20px;
+
     font-size: 96px;
     font-family: "gemunu";
 }
@@ -69,37 +69,55 @@ p   {
     font-family: "roboto";
 }
 h1,p    {
+    display: inline-block;
+    padding: 8px 20px;
     color: white; 
     background-color: var(--secondary); 
     padding: 10px;
     text-align: center;
   
 }
-#svgelem {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-40%);
-  -ms-transform: translateX(-40%);
-  transform: translateX(-40%);
+.shoes {
+  text-align: center;
 }
-.center{
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+ 
+.shoe-holder {
+  display: inline-block;
+  margin: 24px;
+}
+
+.circle {
+  background-color: white;
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.circle img {
+  width: 140%;
+  height: auto;
+  position: relative;
+  left: -36px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.shoe-name {
+  text-align: center;
 }
 .button {
   color: white;
-  padding: 15px 32px;
+  padding: 15px 60px;
   text-align: center;
   text-decoration: none;
   font-size: 36px;
   font-family: "roboto";
-  margin: 4px 2px;
+  margin: 4px 0px;
   cursor: pointer;
   background-color: #8B7D77;
-  border-radius: 40%;
+  border-radius: 44px;
 }
 /* This is a class */
 .container {
